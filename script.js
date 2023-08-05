@@ -14,7 +14,7 @@ function setup() {
     oscillator = new p5.Oscillator();
     oscillator.setType('sine');
     for (var i = 0; i < 100; i++) {
-        list[i] = random();
+        list[i] = i;//random();
     }
     largest = 0;
     barWidth = widths / list.length;
