@@ -65,7 +65,7 @@ function drawTheShit(list) {
     rect(j * barWidth, heights, barWidth, -(list[j] / largest) * heights);
     rect((j + 1) * barWidth, heights, barWidth, -(list[j + 1] / largest) * heights);
     if (j > 0) {
-        playSound(map(list[j], 0, largest, 2400, -2400));
+        playSound(map(list[j], 0, largest, 2400, 440));
     } else {
         stopSound();
     }
